@@ -13,13 +13,13 @@
 
 ## 怎么用
 
-实际 Skill 位于 `adult-tension-narrative/`。将这个目录安装到 Codex 的 skills 目录后，可以这样使用：
+实际 Skill 位于 `adult-tension-narrative/`。将这个目录安装到 Codex / ZCode 的 skills 目录后，可以这样使用：
 
 ```
-开局                    → 随机生成世界观、角色和故事开场
+开局                    → 完整随机生成世界观、角色和故事开场
 继续 / ...              → 剧情往前推一小步，停在你能接手的地方
 快进到明天晚上           → 时间跳跃，世界自动算这期间发生了什么
-存档                    → 输出可跨对话使用的 YAML 存档
+存档 / 总结              → 输出可跨对话使用的 YAML 存档
 载入存档                → 校验并载入 YAML，不重新生成开局
 解除暂停                → 只解除安全暂停，不载入存档
 本局不碰 XXX            → 添加你的硬边界，AI 不会碰
@@ -31,16 +31,16 @@
 | 文件 | 说明 |
 |------|------|
 | `adult-tension-narrative/SKILL.md` | 核心规则：开局流程、回合推进、NPC 决策、状态模型、输出规范 |
-| `adult-tension-narrative/agents/openai.yaml` | Codex 界面配置 |
+| `adult-tension-narrative/agents/openai.yaml` | 界面配置 |
 | `adult-tension-narrative/references/角色设计.md` | 角色创建流程：世界观→张力引擎→NPC 全维角色卡→配角建档 |
 | `adult-tension-narrative/references/世界运转.md` | 时间系统、事件队列、离屏行动、关系网络传播、世界追算 |
-| `adult-tension-narrative/references/状态总结.md` | v3 存档格式、校验、迁移和跨对话续玩 |
+| `adult-tension-narrative/references/状态总结.md` | 存档格式、校验、迁移和跨对话续玩 |
 | `adult-tension-narrative/scripts/validate_state.py` | 基于 YAML 结构的状态校验脚本 |
 | `adult-tension-narrative/tests/test_validate_state.py` | 存档校验器自动化测试 |
 
 ## 内容说明
 
-本引擎仅处理**虚构的成年人**角色。内容可包含成熟氛围、情感张力和亲密互动。所有亲密互动必须建立在明确、持续且可撤回的同意之上。
+本引擎仅处理**虚构的成年人**角色。内容可包含成熟氛围、情感张力与亲密互动。所有亲密互动必须建立在明确、持续且可撤回的同意之上。
 
 ## 许可
 
